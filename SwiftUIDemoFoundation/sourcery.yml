@@ -1,0 +1,10 @@
+sources:
+  - .
+templates:
+  - ../Templates/sourcery
+output:
+  path: ./Generated
+  link:
+    project: Tanger.xcodeproj
+    target: TangerFoundation
+    group: Generated

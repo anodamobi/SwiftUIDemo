@@ -1,0 +1,10 @@
+xcassets:
+- inputs:
+    - Resources/Icons.xcassets
+  outputs:
+    - templatePath: ../Templates/swiftgen/images-xcassets-swift4.stencil
+      output: Generated/Icons.generated.swift
+      params:
+        enumName: Icons
+        allValues: true
+        publicAccess: public

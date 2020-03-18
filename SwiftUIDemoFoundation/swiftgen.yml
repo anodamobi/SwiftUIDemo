@@ -1,0 +1,28 @@
+xcassets:
+  - inputs:
+      - Resources/Palette.xcassets
+    outputs:
+      - templatePath: ../Templates/swiftgen/colors-xcassets-swift4.stencil
+        output: Generated/Colors.generated.swift
+        params:
+          enumName: Palette
+          allValues: true
+          publicAccess: public
+  - inputs:
+      - Resources/Images.xcassets
+    outputs:
+      - templatePath: ../Templates/swiftgen/images-xcassets-swift4.stencil
+        output: Generated/Images.generated.swift
+        params:
+          enumName: Images
+          allValues: true
+          publicAccess: public
+plist:
+  - inputs: 
+      - Resources/
+    outputs:
+      - templatePath: ../Templates/swiftgen/plists-runtime-swift4.stencil
+        output: Generated/Plists.generated.swift
+        params:
+          enumName: Plist
+          publicAccess: true
